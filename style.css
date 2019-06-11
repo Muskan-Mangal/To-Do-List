@@ -1,0 +1,81 @@
+body{
+ background: linear-gradient(to left, #8E0E00, #1F1C18);
+
+}
+.heading{
+  text-align: center;
+  font-weight: bolder;
+  color: blue;
+}
+*{
+  font-family: 'Merriweather', serif;
+}
+
+
+.add-todo-box{
+  display: inline;
+
+
+}
+.new_todo{
+  margin-left: 350px;
+  width: 300px;
+  height:30px;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  font-size: 15px;
+}
+.new_todo_button{
+  width:300px;
+  text-align: center;
+  border-width: 1px;
+  border-color: #00bfff ;
+  background-color: #87cefa;
+  font-weight: bolder;
+  border-radius: 2px;
+  height:33px;
+}
+.list-item{
+  display: inline;
+}
+.todos{
+  margin-left: 320px;
+}
+.toodo{
+  width: 480px;
+  background-color: white;
+  color: black;
+  text-indent: 5px;
+  display: inline-block;
+  font-size:15px;
+  height: 30px;
+
+
+}
+.todos{
+  margin-top: 50px;
+}
+.cut{
+  text-decoration: line-through;
+  color: grey;
+}
+.upbutton{
+    height: 32px;
+    background-color: #80ff80;
+    border-width: 2px;
+    border-color: #1aff1a;
+    border-radius: 2px;
+    display:inline;
+
+}
+.downbutton{
+    height: 32px;
+    background-color: #b3d9ff;
+    border-radius: 2px;
+}
+.delete{
+    height: 32px;
+    background-color: #ff9980;
+    border-radius: 2px;
+}
