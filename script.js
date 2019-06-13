@@ -15,9 +15,16 @@ $(".new_todo_button").on("click",function(){
           console.log("here");
         })
       ).append(
-          $("<button type='button' class='upbutton'>UP</button>")
+          $("<button type='button' class='upbutton'>UP</button>").on("click", (event)=>{
+            var swap = $(event.currentTarget).parent().parent();
+            swap.insertBefore(swap.prev());
+          })
         ).append(
-            $("<button type='button' class='downbutton'>DOWN</button>")).append(
+            $("<button type='button' class='downbutton'>DOWN</button>").on("click", (event)=>{
+              var swap = $(event.currentTarget).parent().parent();
+              swap.insertAfter(swap.next());
+            })
+          ).append(
               $("<button type='button' class='delete'>X</button>").on("click",(event)=>{
                 $(event.currentTarget).parent().parent().fadeOut(()=>{
                   $(event.currentTarget).parent().parent().remove();
